@@ -21,243 +21,204 @@
             </a>
         </div>
         <div class="row">
-          <div class="panel-body">
-                        <form method="POST" role="form">
-            <div class="col-lg-12">
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" class="form-control" id="name">
-                </div>
-                <div class="form-group">
-                    <label for="picture">Picture</label>
-                    <input type="url" class="form-control" id="picture">
-                </div>
+            <div class="panel-body">
+                <form method="POST" role="form">
+                    <div class="col-lg-12">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="picture">Picture</label>
+                            <input type="text" name="pic" class="active" id="picture">
+                        </div>
+                    </div>
+                </form>
             </div>
-          </form>
-        </div>
             <div class="col-lg-12">
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <h3 class="panel-title"><strong>Choose between 1 and 5. With 5 being "a must have" and 1 meaning "you don't care"!</strong></h3>
                     </div>
                     <div class="panel-body">
-                        <form method="POST" role="form">
-                            <div id="question1" class="form-group">
+                        <form action="" role="form">
+                            <div class="form-group">
                                 <label for="question1"> How much are you attracted this feature....Intelligence?</label>
                                 <br>
-                                <input type="radio" name="points1" value="1"> 1
-                                <br>
-                                <input type="radio" name="points1" value="2"> 2
-                                <br>
-                                <input type="radio" name="points1" value="3"> 3
-                                <br>
-                                <input type="radio" name="points1" value="4"> 4
-                                <br>
-                                <input type="radio" name="points1" value="5"> 5
-                                <br>
-                                <br>
+                                <input type="number" name="points" min="1" max="5" step="1" id="question1">
                             </div>
-                            <div id="question2" class="form-group">
+                            <div class="form-group">
                                 <label for="question2">How much are you attracted this feature...."Looks/Physical appearance"?</label>
                                 <br>
-                                <input type="radio" name="points2" value="1"> 1
-                                <br>
-                                <input type="radio" name="points2" value="2"> 2
-                                <br>
-                                <input type="radio" name="points2" value="3"> 3
-                                <br>
-                                <input type="radio" name="points2" value="4"> 4
-                                <br>
-                                <input type="radio" name="points2" value="5"> 5
+                                <input type="number" name="points" min="1" max="5" step="1" id="question2">
                                 <br>
                                 <br>
                             </div>
-                            <div id="question3" class="form-group">
+                            <div class="form-group">
                                 <label for="question3">How much are you attracted this feature...."Humor"?</label>
                                 <br>
-                                <input type="radio" name="points3" value="1"> 1
-                                <br>
-                                <input type="radio" name="points3" value="2"> 2
-                                <br>
-                                <input type="radio" name="points3" value="3"> 3
-                                <br>
-                                <input type="radio" name="points3" value="4"> 4
-                                <br>
-                                <input type="radio" name="points3" value="5"> 5
+                                <input type="number" name="points" min="1" max="5" step="1" id="question3">
                                 <br>
                                 <br>
                             </div>
-                            <div id="question4" class="form-group">
+                            <div class="form-group">
                                 <label for="question4">How much are you attracted this feature...."Financial Success"?</label>
                                 <br>
-                                <input type="radio" name="points4" value="1"> 1
-                                <br>
-                                <input type="radio" name="points4" value="2"> 2
-                                <br>
-                                <input type="radio" name="points4" value="3"> 3
-                                <br>
-                                <input type="radio" name="points4" value="4"> 4
-                                <br>
-                                <input type="radio" name="points4" value="5"> 5
+                                <input type="number" name="points" min="1" max="5" step="1" id="question4">
                                 <br>
                                 <br>
                             </div>
-                            <div id="question5" class="form-group">
+                            <div class="form-group">
                                 <label for="question5"> Why do you date...."For Fun"?</label>
                                 <br>
-                                <input type="radio" name="points5" value="1"> 1
-                                <br>
-                                <input type="radio" name="points5" value="2"> 2
-                                <br>
-                                <input type="radio" name="points5" value="3"> 3
-                                <br>
-                                <input type="radio" name="points5" value="4"> 4
-                                <br>
-                                <input type="radio" name="points5" value="5"> 5
+                                <input type="number" name="points" min="1" max="5" step="1" id="question5">
                                 <br>
                                 <br>
                             </div>
-                            <div id="question6" class="form-group">
+                            <div class="form-group">
                                 <label for="question6"> Why do you date...."Potential future"?</label>
                                 <br>
-                                <input type="radio" name="points6" value="1"> 1
-                                <br>
-                                <input type="radio" name="points6" value="2"> 2
-                                <br>
-                                <input type="radio" name="points6" value="3"> 3
-                                <br>
-                                <input type="radio" name="points6" value="4"> 4
-                                <br>
-                                <input type="radio" name="points6" value="5"> 5
+                                <input type="number" name="points" min="1" max="5" step="1" id="question6">
                                 <br>
                                 <br>
                             </div>
-                            <div id="question7" class="form-group">
+                            <div class="form-group">
                                 <label for="question7"> What do you feel is a good first date choice...."Netflix and Chill"?</label>
                                 <br>
-                                <input type="radio" name="points7" value="1"> 1
-                                <br>
-                                <input type="radio" name="points7" value="2"> 2
-                                <br>
-                                <input type="radio" name="points7" value="3"> 3
-                                <br>
-                                <input type="radio" name="points7" value="4"> 4
-                                <br>
-                                <input type="radio" name="points7" value="5"> 5
+                                <input type="number" name="points" min="1" max="5" step="1" id="question7">
                                 <br>
                                 <br>
                             </div>
-                            <div id="question8" class="form-group">
+                            <div class="form-group">
                                 <label for="question8"> What do you feel is a good first date choice...."Lounge/Restaurant"?</label>
                                 <br>
-                                <input type="radio" name="points8" value="1"> 1
-                                <br>
-                                <input type="radio" name="points8" value="2"> 2
-                                <br>
-                                <input type="radio" name="points8" value="3"> 3
-                                <br>
-                                <input type="radio" name="points8" value="4"> 4
-                                <br>
-                                <input type="radio" name="points8" value="5"> 5
+                                <input type="number" name="points" min="1" max="5" step="1" id="question8">
                                 <br>
                                 <br>
                             </div>
-                            <div id="question9" class="form-group">
+                            <div class="form-group">
                                 <label for="question9">How do you prefer to communicate...."Texting/Social Media"?</label>
                                 <br>
-                                <input type="radio" name="points9" value="1"> 1
-                                <br>
-                                <input type="radio" name="points9" value="2"> 2
-                                <br>
-                                <input type="radio" name="points9" value="3"> 3
-                                <br>
-                                <input type="radio" name="points9" value="4"> 4
-                                <br>
-                                <input type="radio" name="points9" value="5"> 5
+                                <input type="number" name="points" min="1" max="5" step="1" id="question9">
                                 <br>
                                 <br>
                             </div>
-                            <div id="question10" class="form-group">
+                            <div class="form-group">
                                 <label for="question10">How do you prefer to communicate...."Talking on the Phone"?</label>
                                 <br>
-                                <input type="radio" name="points10" value="1"> 1
-                                <br>
-                                <input type="radio" name="points10" value="2"> 2
-                                <br>
-                                <input type="radio" name="points10" value="3"> 3
-                                <br>
-                                <input type="radio" name="points10" value="4"> 4
-                                <br>
-                                <input type="radio" name="points10" value="5"> 5
+                                <input type="number" name="points" min="1" max="5" step="1" id="question10">
                                 <br>
                                 <br>
                             </div>
+                            <button type="submit" class="btn btn-primary btn-md" data-target="modal1" id="add-btn"><span class="glyphicon glyphicon-fire"></span> Add to the Attempt</button>
                         </form>
                         <br>
                         <div class="text-right">
-                            <button type="submit" class="btn btn-primary btn-md" id="add-btn"><span class="glyphicon glyphicon-fire" value="Get Value"></span> Add to the Attempt</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        
+        <div id="modal1" class="form">
+            <div class="form">
+                <h4>Meet Your Future</h4>
+                <h5 id="matchName"></h5>
+                <img id="matchPic" src="" alt="No Image" width= 250px>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Done</a>
+            </div>
+        </div>
     </div>
-    </body>
+</body>
 
 </html>
-    <script type="text/javascript">
-    // Question: What does this code do?
-    $("#add-btn").on("click", function(event) {
-        event.preventDefault();
-        var newReversation = {
-            name: $("#name").val().trim(),
-            picture: $("#picture").val().trim(),
-            scores: [{
-            question1: $("#question1").val()},
+<script type="text/javascript">
+// Question: What does this code do?
+$("#add-btn").on("click", function(event) {
+    event.preventDefault();
+    var newReversation = {
+        name: $("#name").val().trim(),
+        photo: $("#picture").val().trim(),
+        scores: [{
+                question1: $("#question1").val()
+            },
             {
-            question2: $("#question2").val()},
+                question2: $("#question2").val()
+            },
             {
-            question3: $("#question3").val()},
+                question3: $("#question3").val()
+            },
             {
-            question4: $("#question4").val()},
+                question4: $("#question4").val()
+            },
             {
-            question5: $("#question5").val()},
+                question5: $("#question5").val()
+            },
             {
-            question6: $("#question6").val()},
+                question6: $("#question6").val()
+            },
             {
-            question7: $("#question7").val()},
+                question7: $("#question7").val()
+            },
             {
-            question8: $("#question8").val()},
+                question8: $("#question8").val()
+            },
             {
-            question9: $("#question9").val()},
+                question9: $("#question9").val()
+            },
             {
-            question10: $("#question10").val()}
-            ]
-            
-            
-        };
+                question10: $("#question10").val()
+            }
+        ]
+        // score: [
+        //     $("question1").val(),
+        //     $("question2").val(),
+        //     $("question3").val(),
+        //     $("question4").val(),
+        //     $("question5").val(),
+        //     $("question6").val(),
+        //     $("question7").val(),
+        //     $("question8").val(),
+        //     $("question9").val(),
+        //     $("question10").val(),
+        // ]
 
-        console.log(newReversation);
 
-        // Question: What does this code do??
-        $.post("/api/friends", newReversation)
-            .then(function(data) {
-                console.log(data);
-                alert("Adding Resevation...");
-
-        $("question1").val("");
-        $("question2").val("");
-        $("question3").val("");
-        $("question4").val("");
-        $("question5").val("");
-        $("question6").val("");
-        $("question7").val("");
-        $("question8").val("");
-        $("question9").val("");
-        $("question10").val("");
+    };
 
 
+    console.log(newReversation);
 
+    // Question: What does this code do??
+    $.post("/api/friends", newReversation,
+        function(data) {
+            // console.log(data);
+            alert("Adding Resevation...");
+             //Grab the result from the AJAX post so that the best match's name and photo are displayed.
+                $("#matchName").text(data.name);
+                $("#matchPic").attr("src", data.photo);
             });
-    });
-    </script>
+            // Show the modal with the best match
+                $('#modal1');//.modal();
+            
+        
+    $("#name").val("");
+    $("#picture").val("");
+    $("#question1").val("");
+    $("#question2").val("");
+    $("#question3").val("");
+    $("#question4").val("");
+    $("#question5").val("");
+    $("#question6").val("");
+    $("#question7").val("");
+    $("#question8").val("");
+    $("#question9").val("");
+    $("#question10").val("");
+
+
+
+
+});
+</script>
